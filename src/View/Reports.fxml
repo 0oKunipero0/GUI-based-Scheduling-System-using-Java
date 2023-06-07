@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="747.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsController">
+   <children>
+      <Button fx:id="exitButton" layoutX="399.0" layoutY="662.0" mnemonicParsing="false" onAction="#exitButtonPushed" prefHeight="50.0" prefWidth="130.0" text="Exit">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="76.0" layoutY="111.0" text="Contact Schedule">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="29.0" text="General Reports" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="monthComboBox" layoutX="70.0" layoutY="464.0" prefWidth="150.0" promptText="Select a Month" />
+      <ComboBox fx:id="typeComboBox" layoutX="70.0" layoutY="503.0" prefWidth="150.0" promptText="Select a Type" />
+      <Button fx:id="countNum" layoutX="278.0" layoutY="503.0" mnemonicParsing="false" onAction="#onCountNum" text="Generate" />
+      <TableView fx:id="appointmentReportTbl" layoutX="70.0" layoutY="153.0" prefHeight="218.0" prefWidth="793.0">
+        <columns>
+          <TableColumn fx:id="ApptIDClm" prefWidth="135.0" text="Appointment ID" />
+          <TableColumn fx:id="titleClm" minWidth="0.0" prefWidth="104.0" text="Title" />
+            <TableColumn fx:id="typeClm" prefWidth="90.0" text="Type" />
+            <TableColumn fx:id="DescClm" prefWidth="190.0" text="Description" />
+            <TableColumn fx:id="startClm" prefWidth="98.0" text="Start" />
+            <TableColumn fx:id="endClm" prefWidth="91.0" text="End" />
+            <TableColumn fx:id="customerIDClm" prefWidth="84.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="customerComboBox" layoutX="70.0" layoutY="591.0" onAction="#onCustomerSelect" prefWidth="150.0" promptText="Select a Customer" />
+      <Label fx:id="totalNum" layoutX="527.0" layoutY="474.0" text="0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="476.0" text="Total Appointments # by Month &amp; Type:" />
+      <ComboBox fx:id="contactComboBox" layoutX="235.0" layoutY="110.0" onAction="#onContactSelect" prefWidth="150.0" promptText="Select a Contact" />
+      <Label layoutX="278.0" layoutY="595.0" text="Total Appointments # by Customer:" />
+      <Label fx:id="totalNumbyCus" layoutX="527.0" layoutY="593.0" text="0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Line endX="97.0" endY="35.5" layoutX="-26.0" layoutY="378.0" startX="890.0" startY="35.5" />
+      <Label layoutX="70.0" layoutY="414.0" text="Number of Customer Appointments">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
