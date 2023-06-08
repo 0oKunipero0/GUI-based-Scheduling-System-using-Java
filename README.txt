@@ -9,13 +9,13 @@ author: Kun Xie
 application version: 1.0
 
 
-============================================
+-------------------
 
 Apache NetBeans IDE 14
 JavaFX-SDK-18.0.1
 Standard Edition & Java Development Kit, Version 18
 
-============================================
+-------------------
 MySQL Connector version: mysql-connector-java-8.0.30
 
 ============================================
@@ -28,14 +28,14 @@ The organization outlined specific business requirements that must be met as par
 Your company acquires Country and First-Level-Division data from a third party that is updated once per year. These tables are prepopulated with read-only data. Please use the attachment “Locale Codes for Region and Language” to review division data. Your company also supplies a list of contacts, which are prepopulated in the Contacts table; however, administrative functions such as adding users are beyond the scope of the application and are done by your company’s IT support staff. Your application should be organized logically using one or more design patterns and generously commented on using Javadoc so other programmers can read and maintain your code.
 
 
-====================================================================================================================
+============================================
 
 OVERVIEW
 
 This project involves concepts such as refining OOP expertise and building database and file server application developments. It includes lambda expressions, collections, input/output, advanced error handling, and uses the newest features of Java 11 to develop software that meets specific business requirements. The program will also apply the localization API and date/time API in application development to support end-users in various geographical regions. 
 
 
-====================================================================================================================
+============================================
 
 
 IMPLEMENTATION
@@ -43,8 +43,7 @@ IMPLEMENTATION
 The project will create a GUI-based application for the company. The main application will connect the local data files using MySQL Workbench to perform ETL.
 The NetBeans IDE is used here while incorporating the JavaFX library in order to facilitate GUI building in SceneBuilder.
 
-
-====================================================================================================================
+============================================
 
 FUNCTIONALITIES
 
