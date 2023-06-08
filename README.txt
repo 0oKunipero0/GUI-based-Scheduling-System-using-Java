@@ -1,7 +1,7 @@
 ============================================
 
 APPLICATION TITLE: Appointment Scheduling Application
-PURPOSE: It is used as an a managing application for the database that manages business customers and appointments. 
+PURPOSE: It is used as a managing application for the database that manages business customers and appointments. 
 
 ============================================
 
